@@ -7,5 +7,8 @@ public class Main {
         bobsAccount.deposit(51.00);
         bobsAccount.withdrawl(25.0);
         System.out.println(bobsAccount.getBalance());
+
+        Animal animal = new Animal("Ben", 1, 1,1,1);
+        Dog dog = new Dog("Sahsa", 1,1,1,1,1,1,1,1, "Long-hair");
         }
 }

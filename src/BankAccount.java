@@ -19,6 +19,14 @@ public class BankAccount {
         this.phoneNumber = phoneNumber;
     }
 
+    public BankAccount(String customerName, String email, int phoneNumber) {
+        // this is how you set a default value in the constuctor. Using the 1st constructor above
+        this(9999, 100.55, customerName, email, phoneNumber);
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
     public void deposit(double value) {
         this.balance = this.balance + value;
         System.out.println("Deposited " + value);
